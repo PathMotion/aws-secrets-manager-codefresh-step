@@ -18,7 +18,7 @@ metadata:
   official: false
   tags: []
   icon:
-    type: png
+    type: image
     url: 'https://d3kldfg85r0q5q.cloudfront.net/f5955a2f5618a75a974b7a7caf6370ce2692f950/images/favicon.png'
     background: '#f4f4f4'
   examples:
