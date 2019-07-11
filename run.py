@@ -13,6 +13,8 @@ def export_secret_to_env(secret):
     f = open(filepath, "w+")
     for key,value in secret.items():
         print("Exporting {}".format(key))
+        escapedValue = value.translate(str.maketrans({";":  r"\;",
+                                          "=":  r"\="}))
         f.write("{}={}\n".format(key,value))
     f.close()
 
