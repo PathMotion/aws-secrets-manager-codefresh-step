@@ -73,7 +73,7 @@ spec:
   steps:
     main:
       name: aws-secrets-manager
-      image: pathmotion/aws-sm-codefresh
+      image: pathmotion/aws-secrets-codefresh
       environment:
         - 'AWS_REGION=${{AWS_REGION}}'
         - 'SECRET_NAME=${{SECRET_NAME}}'
