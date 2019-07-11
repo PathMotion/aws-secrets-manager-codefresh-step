@@ -13,7 +13,7 @@ def export_secret_to_env(secret):
     f = open(filepath, "w+")
     for key,value in secret.items():
         print("Exporting {}".format(key))
-        f.write("{}=\"{}\"\n".format(key,value))
+        f.write("{}={}\n".format(key,value))
     f.close()
 
 def get_secret(secret_name, region_name):
