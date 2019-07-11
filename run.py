@@ -11,7 +11,6 @@ def main():
 def export_secret_to_env(secret):
     filepath = os.path.join(os.environ['CF_VOLUME_PATH'], "env_vars_to_export")
     f = open(filepath, "w+")
-    f.write("# AWS Secrets Manager\n")
     for key,value in secret.items():
         print("Exporting {}".format(key))
         f.write("{}=\"{}\"\n".format(key,value))
