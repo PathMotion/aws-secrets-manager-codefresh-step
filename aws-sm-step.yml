@@ -1,8 +1,8 @@
 version: '1.0'
 kind: step-type
 metadata:
-  name: aws-secrets-manager
-  isPublic: true
+  name: pmo_maxime/aws-secrets-manager
+  isPublic: false
   description: >-
     The plugin imports KV secrets values from AWS Secrets Manager to Codefresh pipeline ENV
     variables
@@ -18,8 +18,8 @@ metadata:
   official: false
   tags: []
   icon:
-    type: svg
-    url: 'https://cdn.jsdelivr.net/gh/codefresh-io/steps/incubating/vault/icon.svg'
+    type: png
+    url: 'https://d3kldfg85r0q5q.cloudfront.net/f5955a2f5618a75a974b7a7caf6370ce2692f950/images/favicon.png'
     background: '#f4f4f4'
   examples:
     - description: example-1
@@ -48,7 +48,7 @@ spec:
         "required": [
           "AWS_REGION",
           "SECRET_NAME",
-          "KEY_ID"
+          "KEY_ID",
           "ACCESS_KEY"
         ],
         "properties": {
